@@ -311,6 +311,10 @@ models:
   #   context_window: 128000    # Total prompt + completion capacity
   #   temperature: 0.7
   #   supports_vision: true # Enable vision support for view_image tool
+  #   # Optional (default false): merge adjacent user-role messages before the
+  #   # request. Enable only for OpenAI-compatible backends that reject
+  #   # consecutive user messages (strict user/assistant alternation).
+  #   merge_consecutive_user_messages: false
 
   # Example: OpenAI Responses API model
   # - name: gpt-5-responses
